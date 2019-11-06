@@ -1,0 +1,11 @@
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\bin\Debug\PruebaTecnicaDitech.Data.dll.config
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\bin\Debug\PruebaTecnicaDitech.Data.dll
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\bin\Debug\PruebaTecnicaDitech.Data.pdb
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\bin\Debug\EntityFramework.dll
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\bin\Debug\EntityFramework.xml
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\obj\Debug\PruebaTecnicaDitech.Data.csproj.CopyComplete
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\obj\Debug\PruebaTecnicaDitech.Data.dll
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\obj\Debug\PruebaTecnicaDitech.Data.pdb
+C:\Users\SANTIAGO ROSAS\source\repos\PruebaTecnicaDitech.API\PruebaTecnicaDitech.Data\obj\Debug\PruebaTecnicaDitech.Data.csprojAssemblyReference.cache

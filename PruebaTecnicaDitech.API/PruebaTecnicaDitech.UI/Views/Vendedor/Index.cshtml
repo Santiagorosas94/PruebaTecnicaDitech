@@ -1,0 +1,83 @@
+﻿@model IEnumerable<PruebaTecnicaDitech.Data.Vendedor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "New")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Numero_Identificacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Codigo_Ciudad)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero_Identificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo_Ciudad)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Codigo }) |
+                @*<input value="@item.Codigo" onclick="EliminarVendedor(this)" />*@
+                <a onclick="EliminarVendedor(@item.Codigo)">Eliminar</a>
+                @*@Html.ActionLink("Delete", "Delete", new { id = item.Codigo })*@
+            </td>
+        </tr>
+    }
+
+</table>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/inputmask")
+    <script type="text/javascript">
+
+            const EliminarVendedor = async (item) =>
+            {
+                //const vendedorId = $(item).val();
+                var url = `@Url.Action("Delete", "Vendedor")/?Id=${item}`;
+                var peticion = await fetch(url);
+                var response = await peticion.json();
+                if (response = "Success") {
+                    alert("Se elimino correctamente el vendedor");
+                    //showMessage("Vendedor", "Se elimino correctamente el vendedor", "success");
+                }
+                else {
+                    alert("No se elimino correctamente el vendedor");
+                    //showMessage("Vendedor", "No se elimino correctamente el vendedor", "danger");
+
+                }
+
+
+            }
+
+        function showMessage(title, messsage, tipo) {
+            $.bootstrapGrowl('<h4>' + title + '</h4> <p>' + messsage + '</p>', { type: tipo, delay: 4500, allow_dismiss: true });
+        }
+    </script>
+}
